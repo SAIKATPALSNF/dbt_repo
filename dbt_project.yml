@@ -1,0 +1,6 @@
+name: dev
+config-version: 2
+
+models:
+  dev: 
+    +materialized: table
