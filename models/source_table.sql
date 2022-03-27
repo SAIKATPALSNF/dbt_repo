@@ -1,7 +1,5 @@
-{{ config(materialized='table')}}
-with temp as 
-(select DEPT,sum(SALARY) salary 
+{%- set v_salary=get_salary()    -%}
+
+select sum(SALARY) salary 
 from "DBT"."DBT"."EMP"
-group by DEPT
-)
-select * from temp
+where DEPT={{'v_salary'}}
