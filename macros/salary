@@ -1,3 +1,3 @@
-{% mcro get_salary()% }
+{% macro get_salary()% }
 {{ return("IT") }}
 {% endmacro %}
