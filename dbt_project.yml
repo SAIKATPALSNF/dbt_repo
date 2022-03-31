@@ -17,8 +17,6 @@ analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
- macros:
-  - name: "salary"
 snapshot-paths: ["snapshots"]
 
 target-path: "target"  # directory which will store compiled SQL files
